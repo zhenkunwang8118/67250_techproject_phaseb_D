@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Wendy Wang">
+    <meta name="keywords" content="Museum, MonoMuse, Carnegie Mellon University, Information Systems">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse</title>
+
+    <link rel="stylesheet" href="./static/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body onload = "addYear()">
+    <h2 id="greeting">Welcome to the MonoMuse Museum</h2>
+    <header>
+        <nav>
+            <a id="navselected" href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a class="cta" href="views/tickets.html">Buy Tickets</a>
+            <a href="views/checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+
+    <main>
+        <section>
+            <h2>Welcome to MonoMuse</h2>
+            <p>
+                MonoMuse is a modern museum experience designed to help visitors discover exhibitions,
+                explore collections, and easily plan their visit.
+            </p>
+            <p>
+                Our redesigned website makes essential information easier to find, with a special focus
+                on making the Buy Tickets option more visible and accessible.
+            </p>
+            <a class="cta" href="views/tickets.html">Buy Tickets Now</a>
+        </section>
+
+        <section>
+            <h2>Plan Your Visit</h2>
+            <p>Browse exhibitions, learn about featured works, and reserve tickets in just a few clicks.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyYear"></span> MonoMuse Museum. All rights reserved.</p>
+    </footer> 
+    <script src="./static/script.js"></script>
+</body>
+</html>

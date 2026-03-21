@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Wendy Wang">
+    <meta name="keywords" content="Museum, Exhibitions, MonoMuse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions | MonoMuse</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+   
+</head>
+<body onload = "addYear()">
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a id="navselected" href="exhibitions.html">Exhibitions</a>
+            <a class="cta" href="tickets.html">Buy Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+
+    <main>
+        <section>
+            <h2>Current Exhibitions</h2>
+            <p><strong>Light and Memory</strong> explores the relationship between technology and human recollection.</p>
+            <p><strong>Fragments of the City</strong> presents photography and mixed media works about urban life.</p>
+            <p><strong>Future Archives</strong> invites visitors to imagine how museums preserve the present for the future.</p>
+        </section>
+
+        <section>
+            <h2>Featured Exhibition</h2>
+            <p>
+                This season’s featured exhibition centers on immersive storytelling through projection, sound,
+                and interactive design.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyYear"></span> MonoMuse Museum. All rights reserved.</p>
+    </footer>
+    <script src="../static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Wendy Wang">
+  <meta name="keywords" content="Bagel Museum, explore, strawberry cream cheese">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore | The Bagel Museum</title>
+
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <div class="brand-wrap">
+        <img id="logo" src="../static/bagelmuseumlogo.png" alt="The Bagel Museum logo">
+        <div class="brand-text">
+          <h1 class="site-title">The Bagel Museum</h1>
+          <p class="tagline">Explore the world of bagels, spreads, and neighborhood food culture.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav_bar" id="topNav">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="buytickets.html" class="cta nav-cta">Buy Tickets</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+    </nav>
+
+    <main class="main">
+      <section class="page-hero">
+        <span class="eyebrow">Explore</span>
+        <h2>Explore the Museum</h2>
+        <p>
+          Discover immersive exhibits that celebrate the bagel as both an everyday food and a cultural icon. At The Bagel Museum, visitors move through playful installations, tasting stations, and digital displays that trace the bagel from bakery staple to brunch legend.
+        </p>
+      </section>
+
+      <section class="feature-grid">
+        <article class="feature-card bagel-card">
+          <img src="../static/bagel.png" alt="Bagel icon" class="card-icon">
+          <h3>Explore the Museum</h3>
+          <p>
+            Discover interactive installations, sensory displays, and storytelling spaces that bring the bagel’s cultural journey to life.
+          </p>
+        </article>
+
+        <article class="feature-card cream-card">
+          <img src="../static/creamcheese.png" alt="Cream cheese icon" class="card-icon">
+          <h3>Collections</h3>
+          <p>
+            Our special collections highlight regional bagel styles, classic baking tools, and cream cheese pairings including strawberry, scallion, honey walnut, and smoked salmon spread.
+          </p>
+        </article>
+
+        <article class="feature-card strawberry-card">
+          <img src="../static/strawberry.png" alt="Strawberry icon" class="card-icon">
+          <h3>Visitor Experience</h3>
+          <p>
+            The museum is designed to feel warm, whimsical, and easy to navigate, with self-guided paths, educational displays, and flavor-themed gallery stops.
+          </p>
+        </article>
+      </section>
+
+      <section class="visit-layout">
+        <div class="visit-text">
+          <h2>Plan Your Visit</h2>
+          <p>
+            Visit our concept museum in New York, where neighborhood bagel culture inspires every exhibit. Use the interactive map below to see our location and start planning your visit.
+          </p>
+
+          <div class="info-chip-row">
+            <div class="info-chip">
+              <img src="../static/bagel.png" alt="Bagel icon">
+              <span>Guided + self-guided routes</span>
+            </div>
+            <div class="info-chip">
+              <img src="../static/strawberry.png" alt="Strawberry icon">
+              <span>Seasonal themed exhibits</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit-map-card">
+          <div id="map"></div>
+        </div>
+      </section>
+    </main>
+
+    <figure class="main_img">
+      <div class="side-stack">
+        <div class="side-card">
+          <img src="../static/creamcheese.png" alt="Cream cheese icon" class="side-icon">
+          <h3>Special Collection</h3>
+          <p>Plain, sesame, everything, cinnamon raisin, blueberry, and more.</p>
+        </div>
+
+        <div class="side-card">
+          <img src="../static/strawberry.png" alt="Strawberry icon" class="side-icon">
+          <h3>Featured Flavor</h3>
+          <p>Strawberry cream cheese anchors the museum’s current seasonal theme.</p>
+        </div>
+      </div>
+    </figure>
+
+    <footer class="footer">
+      <p>&copy; <span id="copyYear"></span> The Bagel Museum. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../static/script.js"></script>
+</body>
+</html>
